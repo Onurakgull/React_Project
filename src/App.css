@@ -1,0 +1,51 @@
+.app {
+  display: flex;
+  flex-grow: 1;
+  background: #ddd;
+}
+
+.app a {
+  display: grid;
+  place-items: center;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  background: rgb(255 255 255 / 9%);
+  padding: 20px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.app a:nth-child(odd) {
+  background: rgb(255 255 255 / 6%);
+}
+
+.app a:hover {
+  background: rgb(255 255 255 / 15%);
+}
+
+.App {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 56px; /* Initial margin when the sidebar is closed */
+  transition: margin-left 0.45s ease;
+}
+
+.App.sidebar-open {
+  margin-left: 190px; /* Expanded sidebar width */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px; /* Default padding when sidebar is closed */
+  background-color: #282828;
+  transition: padding 0.45s ease;
+}
+
+.content.open {
+  padding-left: 190px; /* Padding when sidebar is open */
+}
+
+.content.closed {
+  padding-left: 40px; /* Padding when sidebar is closed */
+}

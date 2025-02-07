@@ -1,0 +1,172 @@
+.page.sidebar-7-page {
+    display: flex;
+    height: 100vh;
+    background: #1c1b23;
+  }
+  
+  .content {
+    flex-grow: 1;
+    transition: 0.45s;
+    padding: 20px;
+    color: white;
+    background-color: #282828;
+  }
+  
+  .sidebar-7 {
+    width: 56px;
+    background: #000000;
+    backdrop-filter: blur(10px);
+    transition: 0.45s;
+  }
+  
+  .sidebar-7.open {
+    width: 190px;
+  }
+  
+
+.page.sidebar-7-page button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.sidebar-7 {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 56px;
+    background: #000000;
+    backdrop-filter: blur(10px);
+    transition: 0.45s;
+}
+
+.sidebar-7 .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.sidebar-7.open {
+    width: 190px;
+    overflow: hidden;
+}
+
+.sidebar-7 .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-7 header {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding: 0 6px 0 48px;
+    margin: 5px;
+}
+
+.sidebar-7 header img {
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar-7-burger {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    color: #f9f9f9;
+}
+
+.sidebar-7 nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px 20px;
+    gap: 2px;
+    flex: 1 1 auto;
+}
+
+.sidebar-7 nav>a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 40px;
+    width: 20px;
+    font-family: "Poppins";
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 0 10px;
+    border-radius: 8px;
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.sidebar-7 nav>a:last-child {
+    margin-top: auto;
+}
+
+.sidebar-7 nav>a:hover {
+    background: rgba(120, 116, 116, 0.4);
+}
+
+.sidebar-7:not(.open) nav p {
+    visibility: hidden;
+}
+
+.sidebar-7:not(.open) nav>a:hover p {
+    opacity: 1;
+    visibility: visible;
+    background: #2e2a47;
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+    translate: 12px 0;
+}
+
+.sidebar-7 header>img,
+.sidebar-7 nav>a p {
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.sidebar-7.open :is(nav a p, header > img) {
+    opacity: 1;
+}
+
+.sidebar-7.open nav>a {
+    width: 90%;
+}
+
+.sidebar-7.open nav {
+    background: url("./bg.svg") no-repeat center center;
+    background-size: cover;
+}
+
+@media (width <=400px) {
+    .sidebar-7 {
+        translate: -100% 0;
+    }
+
+    .sidebar-7.open {
+        translate: 0;
+    }
+
+    .sidebar-7:not(.open) a span {
+        transition: 0.3s;
+        opacity: 0;
+    }
+}
+
+.active-link {
+    background-color: rgba(120, 116, 116, 0.6);
+    border-radius: 8px;
+}
