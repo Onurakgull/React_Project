@@ -1,2 +1,2 @@
-const Favorite = () => <h1>Welcome to the Favorite Page</h1>;
+const Favorite = () => <h1>Welcome to the Favorite Page test</h1>;
 export default Favorite;
