@@ -37,15 +37,20 @@
 
 .content {
   flex-grow: 1;
-  padding: 20px; /* Default padding when sidebar is closed */
+  padding: 0px; /* Default padding when sidebar is closed */
   background-color: #282828;
   transition: padding 0.45s ease;
+  background: url(../src/component/images/bg3.svg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .content.open {
-  padding-left: 190px; /* Padding when sidebar is open */
+  padding-left: 133px; /* Padding when sidebar is open */
 }
 
 .content.closed {
-  padding-left: 40px; /* Padding when sidebar is closed */
+  padding-left: 0px; /* Padding when sidebar is closed */
 }

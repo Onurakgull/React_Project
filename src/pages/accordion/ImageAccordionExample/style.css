@@ -1,0 +1,35 @@
+/* Root seviyesinde değişken tanımlama */
+:root {
+  --primary-color: #d2d5d8; /* Mavi renk */
+  --secondary-color: #e2e8f0; /* Açık gri renk */
+  --highlight-color: #ff7e5f; /* Turuncu renk */
+}
+
+.page.image-accordion-page {
+  background: #141415;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  /* Mavi renk */
+  text-align: center;
+  opacity: 0;
+  /* Başlangıçta görünmez */
+  animation: fadeIn 1.5s ease-out forwards;
+  /* Animasyon */
+  margin-top: 50px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
