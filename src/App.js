@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Sidebar7 } from "./component/Sidebar";
+import { Sidebar } from "./component/Sidebar1";
 import "./App.css";
 import Home from "./pages/Home";
 import Build from "./pages/Build";
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div className="App">
         <div className="sidebar">
-          <Sidebar7 setIsOpen={setIsSidebarOpen} />
+          <Sidebar setIsOpen={setIsSidebarOpen} />
         </div>
         <div className={`content ${isSidebarOpen ? 'open' : 'closed'}`}>
           <Routes>

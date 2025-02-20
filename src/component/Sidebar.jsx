@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./time.svg";
 import "./styles.css";
@@ -16,17 +16,13 @@ const Icon = ({ icon }) => (
 );
 
 const Header = () => (
-  <header>
+  <header className="sidebar-header">
     <img src={logo} alt="Logo" />
   </header>
 );
 
-export const Sidebar7 = ({ setIsOpen }) => {
+export const Sidebar7 = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-
-  useEffect(() => {
-    setIsOpen(isSidebarOpen); // Notify App.js about the sidebar's state
-  }, [isSidebarOpen, setIsOpen]);
 
   return (
     <section className="page sidebar-7-page">
