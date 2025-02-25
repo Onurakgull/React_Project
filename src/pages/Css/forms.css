@@ -1,0 +1,45 @@
+.form-system {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    min-height: 95vh;
+  }
+  
+  /* Form alanı */
+  .form-system > div:first-child {
+    flex: 1;
+    max-width: 35%;
+    padding: 20px;
+    background: #585858;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tablo alanı */
+  .form-system > div:last-child {
+    flex: 2;
+    max-width: 60%;
+    padding: 20px;
+    color: #ffffff;
+    background: #585858;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Küçük ekranlarda dikey hizalama */
+  @media (max-width: 768px) {
+    .form-system {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .form-system > div:first-child,
+    .form-system > div:last-child {
+      max-width: 100%;
+    }
+  }
+  

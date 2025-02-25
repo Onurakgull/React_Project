@@ -4,7 +4,7 @@ import "./styles.css";
 
 const navItems = [
   { path: "/", label: "home", icon: "home" },
-  { path: "/chat", label: "chat", icon: "chat" },
+  { path: "/forms", label: "forms", icon: "chat" },
   { path: "/settings", label: "settings", icon: "settings" },
   { path: "/logout", label: "logout", icon: "logout" },
 ];

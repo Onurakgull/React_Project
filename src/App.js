@@ -4,7 +4,7 @@ import { Sidebar } from "./component/Sidebar1";
 import "./App.css";
 import Home from "./pages/Home";
 import Build from "./pages/Build";
-import Cloud from "./pages/Cloud";
+import Forms from "./pages/Forms";
 import Mail from "./pages/Mail";
 import Favorite from "./pages/Favorite";
 
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/build" element={<Build />} />
-            <Route path="/cloud" element={<Cloud />} />
+            <Route path="/forms" element={<Forms />} />
             <Route path="/mail" element={<Mail />} />
             <Route path="/favorite" element={<Favorite />} />
           </Routes>
