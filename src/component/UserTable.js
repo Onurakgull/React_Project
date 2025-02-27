@@ -109,7 +109,7 @@ const UserTable = () => {
                   ) : (
                     <button className="edit-btn" onClick={() => handleEdit(user)}>Düzenle</button>
                   )}
-                  <button className="delete-btn" onClick={() => handleDelete(user.id)}>Sil</button>
+                  <button className="del-btn" onClick={() => handleDelete(user.id)}>Sil</button>
                 </td>
               </tr>
             ))

@@ -42,8 +42,12 @@
     color: white;
   }
   
-  .delete-btn {
+  .del-btn {
     background-color: #dc3545;
     color: white;
+  }
+
+  .del-btn:hover {
+    background-color: #b90f20;
   }
   

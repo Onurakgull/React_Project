@@ -7,27 +7,33 @@ import Build from "./pages/Build";
 import Forms from "./pages/Forms";
 import Mail from "./pages/Mail";
 import Favorite from "./pages/Favorite";
+import Setting from "./pages/Setting";
+import { ThemeProvider } from "./pages/accordion/SettingMode/ThemeContext";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <Router>
-      <div className="App">
-        <div className="sidebar">
-          <Sidebar setIsOpen={setIsSidebarOpen} />
+    <ThemeProvider>
+      <Router>
+        <div className="App">
+          <div className="sidebar">
+            <Sidebar setIsOpen={setIsSidebarOpen} />
+          </div>
+          <div className={`content ${isSidebarOpen ? 'open' : 'closed'}`}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/build" element={<Build />} />
+              <Route path="/forms" element={<Forms />} />
+              <Route path="/mail" element={<Mail />} />
+              <Route path="/favorite" element={<Favorite />} />
+                <Route path="/settings" element={<Setting />} />
+            </Routes>
+          </div>
         </div>
-        <div className={`content ${isSidebarOpen ? 'open' : 'closed'}`}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/build" element={<Build />} />
-            <Route path="/forms" element={<Forms />} />
-            <Route path="/mail" element={<Mail />} />
-            <Route path="/favorite" element={<Favorite />} />
-          </Routes>
-        </div>
-      </div>
-    </Router>
+      </Router>
+    </ThemeProvider>
+
   );
 }
 

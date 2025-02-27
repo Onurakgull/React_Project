@@ -1,0 +1,124 @@
+.settings-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: var(--secondary-bg);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .settings-group, .profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--secondary-bg);
+    margin: 15px 0;
+    transition: background 0.3s ease;
+  }
+  
+  .settings-group:hover, .profile-section:hover {
+    background-color: #313556;
+    color: white;
+  }
+  
+  .settings-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .settings-label label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .icon {
+    font-size: 20px;
+  }
+  
+  input[type="checkbox"],
+  select,
+  input[type="password"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--highlight-color);
+  }
+  
+  .profile-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-pic, .placeholder-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--highlight-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  input[type="file"] {
+    color: var(--text-color);
+    font-size: 14px;
+  }
+  
+  .save-btn, .delete-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .save-btn {
+    background: var(--highlight-color);
+    color: white;
+    border: none;
+  }
+  
+  .save-btn:hover {
+    background: var(--button-hover);
+    transform: scale(1.03);
+  }
+  
+  .delete-btn {
+    background: transparent;
+    border: 2px solid var(--highlight-color);
+    color: var(--highlight-color);
+  }
+  
+  .delete-btn:hover {
+    background: var(--highlight-color);
+    color: white;
+  }
+  

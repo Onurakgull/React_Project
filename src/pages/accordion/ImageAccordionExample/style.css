@@ -1,6 +1,5 @@
 /* Root seviyesinde değişken tanımlama */
 :root {
-  --primary-color: #d2d5d8; /* Mavi renk */
   --secondary-color: #e2e8f0; /* Açık gri renk */
   --highlight-color: #ff7e5f; /* Turuncu renk */
 }
@@ -12,7 +11,7 @@
 h1 {
   font-size: 4.5rem;
   font-weight: bold;
-  color: var(--primary-color);
+  color: var(----primary-bg);
   /* Mavi renk */
   text-align: center;
   opacity: 0;

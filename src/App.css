@@ -1,3 +1,32 @@
+:root {
+  --primary-bg: #f5f5f5;
+  --secondary-bg: #ddd;
+  --text-color: #000000;
+  --highlight-color: #ff6f61;
+  --input-bg: #2c2f48;
+  --border-color: #444455;
+  --button-hover: #e05c50;
+}
+
+.dark-mode {
+  --primary-bg: #111112;
+  --primary-card-bg: #474759;
+  --secondary-bg: #23293b;
+  --text-color: #e0e0e0;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.settings-container {
+  background-color: var(--secondary-bg);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -39,9 +68,8 @@
 .content {
   flex-grow: 1;
   padding: 0px; /* Default padding when sidebar is closed */
-  background-color: #282828;
   transition: padding 0.45s ease;
-  background: url(../src/component/images/bg3.svg);
+  /* background: url(../src/component/images/bg3.svg);*/
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
