@@ -8,6 +8,7 @@ import Forms from "./pages/Forms";
 import Mail from "./pages/Mail";
 import Favorite from "./pages/Favorite";
 import Setting from "./pages/Setting";
+import Sipederman from "./pages/Sipederman"
 import { ThemeProvider } from "./pages/accordion/SettingMode/ThemeContext";
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
               <Route path="/forms" element={<Forms />} />
               <Route path="/mail" element={<Mail />} />
               <Route path="/favorite" element={<Favorite />} />
-                <Route path="/settings" element={<Setting />} />
+              <Route path="/settings" element={<Setting />} />
+              <Route path="/dashboard" element={<Sipederman />} />
             </Routes>
           </div>
         </div>

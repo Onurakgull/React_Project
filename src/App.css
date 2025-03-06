@@ -3,7 +3,8 @@
   --secondary-bg: #ddd;
   --text-color: #000000;
   --highlight-color: #ff6f61;
-  --input-bg: #2c2f48;
+  --input-bg: #4b4f6f;
+  --input-text-color: #ffffff;
   --border-color: #444455;
   --button-hover: #e05c50;
 }
@@ -12,6 +13,7 @@
   --primary-bg: #111112;
   --primary-card-bg: #474759;
   --secondary-bg: #23293b;
+  --input-bg: #434345;
   --text-color: #e0e0e0;
 }
 
