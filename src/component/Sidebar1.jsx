@@ -12,7 +12,7 @@ const navItems = [
 const mainNavItems = [
   { path: "/dashboard", label: "Boards", icon: "dashboard" },
   { path: "/teams", label: "Teams", icon: "groups" },
-  { path: "/billing", label: "Billing", icon: "credit_card" },
+  { path: "/table", label: "Table", icon: "credit_card" },
   { path: "/events", label: "Events", icon: "calendar_month" },
   { path: "/tasks", label: "Tasks", icon: "check_box" },
   { path: "/config", label: "Config", icon: "tune" },

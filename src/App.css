@@ -4,6 +4,7 @@
   --text-color: #000000;
   --highlight-color: #ff6f61;
   --input-bg: #4b4f6f;
+  --table-top: #323232;
   --input-text-color: #ffffff;
   --border-color: #444455;
   --button-hover: #e05c50;
@@ -15,6 +16,7 @@
   --secondary-bg: #23293b;
   --input-bg: #434345;
   --text-color: #e0e0e0;
+  --table-top: #a1a1a1;
 }
 
 body {

@@ -10,6 +10,8 @@ import Favorite from "./pages/Favorite";
 import Setting from "./pages/Setting";
 import Sipederman from "./pages/Sipederman"
 import { ThemeProvider } from "./pages/accordion/SettingMode/ThemeContext";
+import { Table1Example } from "./pages/tables/Table1Example";
+
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -30,6 +32,7 @@ function App() {
               <Route path="/favorite" element={<Favorite />} />
               <Route path="/settings" element={<Setting />} />
               <Route path="/dashboard" element={<Sipederman />} />
+              <Route path="/table" element={<Table1Example />} />
             </Routes>
           </div>
         </div>
