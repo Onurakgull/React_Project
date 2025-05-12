@@ -11,7 +11,7 @@ import Setting from "./pages/Setting";
 import Sipederman from "./pages/Sipederman"
 import { ThemeProvider } from "./pages/accordion/SettingMode/ThemeContext";
 import { Table1Example } from "./pages/tables/Table1Example";
-
+import Footer from "./pages/Footer"
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -37,6 +37,7 @@ function App() {
           </div>
         </div>
       </Router>
+      <Footer />
     </ThemeProvider>
 
   );
