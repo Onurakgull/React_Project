@@ -12,6 +12,7 @@ import Sipederman from "./pages/Sipederman"
 import { ThemeProvider } from "./pages/accordion/SettingMode/ThemeContext";
 import { Table1Example } from "./pages/tables/Table1Example";
 import Footer from "./pages/Footer"
+import FlowerPage from "./pages/Flowers";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -33,6 +34,7 @@ function App() {
               <Route path="/settings" element={<Setting />} />
               <Route path="/dashboard" element={<Sipederman />} />
               <Route path="/table" element={<Table1Example />} />
+              <Route path="/events" element={<FlowerPage />} />
             </Routes>
           </div>
         </div>
