@@ -13,6 +13,7 @@ import { ThemeProvider } from "./pages/accordion/SettingMode/ThemeContext";
 import { Table1Example } from "./pages/tables/Table1Example";
 import Footer from "./pages/Footer"
 import FlowerPage from "./pages/Flowers";
+import ModemData from "./pages/ModemData";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -35,6 +36,7 @@ function App() {
               <Route path="/dashboard" element={<Sipederman />} />
               <Route path="/table" element={<Table1Example />} />
               <Route path="/events" element={<FlowerPage />} />
+              <Route path="/config" element={<ModemData />} />
             </Routes>
           </div>
         </div>
